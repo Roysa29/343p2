@@ -3,6 +3,7 @@ import Checkbox from "./Checkbox";
 import ProductList from "./ProductsList";
 // import { productsList } from "./data.json";
 import "./styles.css";
+import "./productStyle.css";
 
 const productsList = [
   {
@@ -62,29 +63,31 @@ export default class App extends Component {
     );
 
     return (
-      <div className="App">
+      <div className="merch">
         <h1>Merch</h1>
-        <Checkbox
-          id="1"
-          title="Hats"
-          name="first"
-          checked={this.state.categories.first}
-          handleChange={this.handleChange}
-        />
-        <Checkbox
-          id="2"
-          title="SweatShirts"
-          name="second"
-          handleChange={this.handleChange}
-          checked={this.state.categories.second}
-        />
-        <ProductList
-          products={
-            filteredProducts.length === 0
-              ? this.state.products
-              : filteredProducts
-          }
-        />
+        <div className="filter">
+          <Checkbox
+            id="1"
+            title="Hats"
+            name="first"
+            checked={this.state.categories.first}
+            handleChange={this.handleChange}
+          />
+          <Checkbox
+            id="2"
+            title="SweatShirts"
+            name="second"
+            handleChange={this.handleChange}
+            checked={this.state.categories.second}
+          />
+          </div>
+          <ProductList
+            products={
+              filteredProducts.length === 0
+                ? this.state.products
+                : filteredProducts
+            }
+          />
       </div>
     );
   }

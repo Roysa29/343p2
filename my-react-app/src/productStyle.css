@@ -1,0 +1,89 @@
+/* Side Menu */
+.filter {
+    font-family: Impact;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0vh 5vw;
+    background-color: rgb(193, 167, 214);
+    width: 150px;
+    height: 875px;
+    position: absolute;
+    left: -97px;
+    border-style: solid;
+}
+
+/* Grid of Product Images */
+.items {
+    overflow: scroll;
+    width: 1760px;
+    height: 875px;
+    position: absolute;
+    left: 150px;
+}
+
+/* "Shop Our Merch Store" */
+.merch {
+    font-family: Impact;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+
+/* Grid Structure */
+.row {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    margin: 20px 20px 20px 20px;
+    flex: 15%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin: 20px 20px 20px 20px;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    border-style: solid;
+    border-color: rgb(24, 23, 23);
+}
+
+/* React to cursor hover */
+.column :hover {
+    width: 110%;
+    margin: 10px 8px 8px 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .items {
+        overflow: scroll;
+        width: 700;
+        height: 875px;
+        position: absolute;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .items {
+        overflow: scroll;
+        width: 500;
+        height: 875px;
+        position: absolute;
+        left: 150px;
+    }
+}

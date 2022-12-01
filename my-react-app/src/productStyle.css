@@ -1,15 +1,17 @@
 /* Side Menu */
 .filter {
     font-family: Impact;
-    font-size: 20px;
+    font-size: 25px;
     padding: 0px;
     margin: 0vh 5vw;
     background-color: rgb(193, 167, 214);
     width: 150px;
     height: 875px;
     position: absolute;
-    left: -97px;
+    left: -88px;
+    top: 100px;
     border-style: solid;
+    text-align: left;
 }
 
 /* Grid of Product Images */
@@ -25,12 +27,12 @@
 .merch {
     font-family: Impact;
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 900;
 }
 
 
-/* Grid Structure */
+/* Grid Structure
 .row {
     margin: 20px 20px 20px 20px;
     display: flex;
@@ -43,21 +45,21 @@
     flex: 15%;
     max-width: 20%;
     padding: 0 4px;
-}
+} */
 
-.column img {
+.products img {
     margin: 20px 20px 20px 20px;
     vertical-align: middle;
-    width: 100%;
+    width: 80%;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
     border-style: solid;
     border-color: rgb(24, 23, 23);
 }
 
 /* React to cursor hover */
-.column :hover {
-    width: 110%;
-    margin: 10px 8px 8px 10px;
+.products :hover {
+    width: 95%;
+    /* margin: 10px 8px 8px 10px; */
 }
 
 @media screen and (max-width: 800px) {

@@ -8,15 +8,10 @@ const ProductList = props => {
   const renderProducts = products.map(({ id, title, category, category2 }) => {
     return (
 
-      <div className="merch">
-        <div className="row">
-          <div className="column">
+      <div className="products">
             <li key={id}>
-              {/* <Product title={title} category={category} category2={category2} /> */}
               <img src={category2} />
             </li>
-          </div>
-        </div >
       </div>
 
     );

@@ -57,7 +57,7 @@
 }
 
 /* React to cursor hover */
-.products :hover {
+.products img :hover {
     width: 95%;
     /* margin: 10px 8px 8px 10px; */
 }
@@ -88,4 +88,42 @@
         position: absolute;
         left: 150px;
     }
+}
+
+.popUp {
+    width: 600px; 
+    height: 600px;
+    border-radius: 6px;
+    postion: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    border: 4px solid black;
+    width: 50%; 
+    height: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    z-index: -1000;
+    opacity: 0;
+}
+
+.opaque {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=15);
+    opacity: 0.3;
+}
+
+.openForm {
+    z-index: 1000;
+    opacity: 1;
 }

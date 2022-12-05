@@ -12,210 +12,6 @@ const productsList = [
     "title": "Product 1",
     "category": "shirt",
     "category2": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAomGFkhCpF5jGBEcQdR1QqYDEbBsQxDgHOkvdrAT5SoMlcN2BaUKdY5LS4bkPHZGgXx4&usqp=CAU"
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
-  },
-  {
-    "id": 8,
-    "title": "Product 1",
-    "category": "shirt",
-    "category2": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
-  },
-  {
-    "id": 9,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAomGFkhCpF5jGBEcQdR1QqYDEbBsQxDgHOkvdrAT5SoMlcN2BaUKdY5LS4bkPHZGgXx4&usqp=CAU"
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
-  },
-  {
-    "id": 1,
-    "title": "Product 1",
-    "category": "shirt",
-    "category2": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAomGFkhCpF5jGBEcQdR1QqYDEbBsQxDgHOkvdrAT5SoMlcN2BaUKdY5LS4bkPHZGgXx4&usqp=CAU"
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
-  },
-  {
-    "id": 1,
-    "title": "Product 1",
-    "category": "shirt",
-    "category2": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAomGFkhCpF5jGBEcQdR1QqYDEbBsQxDgHOkvdrAT5SoMlcN2BaUKdY5LS4bkPHZGgXx4&usqp=CAU"
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
-  },
-  {
-    "id": 1,
-    "title": "Product 1",
-    "category": "shirt",
-    "category2": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAomGFkhCpF5jGBEcQdR1QqYDEbBsQxDgHOkvdrAT5SoMlcN2BaUKdY5LS4bkPHZGgXx4&usqp=CAU"
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKPKMxClojoj90eckqn41798jGrBMp61BxA&usqp=CAU"
   }
 ]
 
@@ -253,7 +49,9 @@ export default class App extends Component {
     );
 
     return (
+
       <div className="merch">
+              <div id="blind">
         <div className="topnav">
         <h1>JMU Dungeons and Dragons Club Merch Store</h1>
         </div>
@@ -304,7 +102,13 @@ export default class App extends Component {
               : filteredProducts
           }
         />
+              </div>
+            <div id="pop" class="form">
+            <p>"how yall doing"</p>
+          </div>
       </div>
+
+
     );
   }
 }

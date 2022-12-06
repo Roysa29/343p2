@@ -164,3 +164,9 @@
     width: 35px;
     height: 35px;
 }
+
+.carty {
+    top: 3%;
+    right: 3%;
+    position: absolute;
+}

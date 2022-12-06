@@ -368,8 +368,8 @@ export default class App extends Component {
           <div className="topnav">
             <h1>JMU Dungeons and Dragons Club Merch Store</h1>
           </div>
-          <button onClick={() => this.open()} type="submit">
-          <img src={cartI} border="0" class="cancel"/>
+          <button onClick={() => this.open()} type="submit" class="carty">
+            <img src={cartI} border="0" class="cancel"/>
           </button>
           <div className="filter">
             <h3><u>Categories</u></h3>
@@ -429,8 +429,7 @@ export default class App extends Component {
         </div>
 
         <div id="cart" class="form">
-          <p>productsList</p>
-          <img src="" alt="buttonpng" border="0" id="picture" class="fitted" />
+          <p>Shopping Cart</p>
           <button type="submit" onClick={() => this.close()} class="exit"> <img src={cancel} border="0" class="cancel"/></button>
           <button type="submit" onClick={() => this.emptyCart()} class="add">Empty cart</button>
           <br></br>

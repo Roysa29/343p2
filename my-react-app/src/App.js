@@ -1,17 +1,219 @@
 import React, { Component } from "react";
 import Checkbox from "./Checkbox";
 import ProductList from "./ProductsList";
-// import { productsList } from "./data.json";
 import "./styles.css";
 import "./productStyle.css";
 
-// Just placeholder images for now
 const productsList = [
   {
     "id": 1,
     "title": "Product 1",
     "category": "shirt",
-    "category2": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
+    "category2":  require("./images/Box.png")
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "category": "sweatshirt",
+    "category2":  require("./images/Circle.png")
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "category": "hat",
+    "category2":  require("./images/Pent.png")
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
+  },
+  {
+    "id": 6,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 7,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
+  },
+  {
+    "id": 8,
+    "title": "Product 1",
+    "category": "shirt",
+    "category2":  require("./images/Box.png")
+  },
+  {
+    "id": 9,
+    "title": "Product 2",
+    "category": "sweatshirt",
+    "category2":  require("./images/Circle.png")
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "category": "hat",
+    "category2":  require("./images/Pent.png")
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
+  },
+  {
+    "id": 6,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 7,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
+  },
+  {
+    "id": 1,
+    "title": "Product 1",
+    "category": "shirt",
+    "category2":  require("./images/Box.png")
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "category": "sweatshirt",
+    "category2":  require("./images/Circle.png")
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "category": "hat",
+    "category2":  require("./images/Pent.png")
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
+  },
+  {
+    "id": 6,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 7,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
+  },
+  {
+    "id": 1,
+    "title": "Product 1",
+    "category": "shirt",
+    "category2":  require("./images/Box.png")
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "category": "sweatshirt",
+    "category2":  require("./images/Circle.png")
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "category": "hat",
+    "category2":  require("./images/Pent.png")
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
+  },
+  {
+    "id": 6,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 7,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
+  },
+  {
+    "id": 1,
+    "title": "Product 1",
+    "category": "shirt",
+    "category2":  require("./images/Box.png")
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "category": "sweatshirt",
+    "category2":  require("./images/Circle.png")
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "category": "hat",
+    "category2":  require("./images/Pent.png")
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
+  },
+  {
+    "id": 6,
+    "title": "Product 4",
+    "category": "pin",
+    "category2":  require("./images/Trap.png")
+  },
+  {
+    "id": 7,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2":  require("./images/Star.png")
   }
 ]
 

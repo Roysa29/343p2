@@ -51,6 +51,25 @@ function getCart() {
   }
   return cart;
 }
+
+function addToCart() {
+  var cart = getCart();
+  cart.push(item);
+  createCookie("MyCart", JSON.stringify(cart), 2);
+}
+
+function removeFromCart() {
+  var cart = getCart();
+  if (cart.length() > 0) {
+    for (var i = 0; i < cart.length; i++) {
+      //if (cart[i] == item) {
+        //cart.slice(i, i);
+      //}
+    }
+    createCookie("MyCart", JSON.stringify(cart), 2);
+  }
+}
+
 // Just placeholder images for now
 const productsList = [
   {
@@ -296,30 +315,11 @@ export default class App extends Component {
     popup.classList.add("openForm")
 
   }
-  
-  addToCart() {
-    var cart = getCart();
-    cart.push(item);
-    createCookie("MyCart", JSON.stringify(cart), 2);
-  }
-
-  removeFromCart() {
-    var cart = getCart();
-    if (cart.length() > 0) {
-      for (i = 0; i < cart.length; i++) {
-        if (cart[i] == item) {
-          //cart.slice(i, i);
-        }
-      }
-      createCookie("MyCart", JSON.stringify(cart), 2);
-    }
-  }
 
   close() {
     let popup = document.getElementById("cart");
   }
-
-
+  
   render() {
     const checkedProducts = Object.entries(this.state.categories)
       .filter(category => category[1])

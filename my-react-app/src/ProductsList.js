@@ -22,7 +22,7 @@ const ProductList = props => {
               <div>
                 
                 <button type="submit">
-                  <img src={category2} onClick={() => open(category2, category)}  alt="buttonpng" border="0"/>
+                  <img src={category2} onClick={() => open(category2, title)}  alt="buttonpng" border="0"/>
 
                 </button>
 

@@ -81,214 +81,94 @@ const cart = cartList.cartList;
 const productsList = [
   {
     "id": 1,
-    "title": "Product 1",
-    "category": "Designer Shirt",
+    "title": "T-Shirt",
+    "category": "shirt",
     "category2": require("./images/Box.png")
   },
   {
     "id": 2,
-    "title": "Product 2",
-    "category": "Designer SweatShirt",
-    "category2": require("./images/Circle.png")
+    "title": "Athletic SweatShirt",
+    "category": "sweatshirt",
+    "category2": require("./images/Circle_g.png")
+  },
+  {
+    "id": 2,
+    "title": "Designer SweatShirt",
+    "category": "sweatshirt",
+    "category2": require("./images/Circle_b.png")
   },
   {
     "id": 3,
-    "title": "Product 3",
-    "category": "Hat",
+    "title": "Hat",
+    "category": "hat",
     "category2": require("./images/Pent.png")
   },
   {
+    "id": 3,
+    "title": "Baseball Cap",
+    "category": "hat",
+    "category2": require("./images/Pent_g.png")
+  },
+  {
     "id": 4,
-    "title": "Product 4",
-    "category": "Pin",
+    "title": "Pin",
+    "category": "pin",
     "category2": require("./images/Trap.png")
   },
   {
     "id": 5,
-    "title": "Product 5",
-    "category": "Sticker",
+    "title": "Grey Sticker",
+    "category": "sticker",
     "category2": require("./images/Star.png")
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "Custom Pin",
-    "category2": require("./images/Trap.png")
   },
   {
     "id": 7,
-    "title": "Product 5",
-    "category": "Custom Sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 8,
-    "title": "Product 1",
-    "category": "Shirt",
-    "category2": require("./images/Box.png")
+    "title": "Blue Sticker",
+    "category": "sticker",
+    "category2": require("./images/Star_b.png")
   },
   {
     "id": 9,
-    "title": "Product 2",
-    "category": "Sweatshirt",
+    "title": "SweatShirt",
+    "category": "sweatshirt",
     "category2": require("./images/Circle.png")
   },
   {
     "id": 3,
-    "title": "Product 3",
-    "category": "Top Hat",
-    "category2": require("./images/Pent.png")
+    "title": "Top Hat",
+    "category": "hat",
+    "category2": require("./images/Pent_b.png")
   },
   {
     "id": 4,
-    "title": "Product 4",
+    "title": "Green Pin",
     "category": "pin",
-    "category2": require("./images/Trap.png")
+    "category2": require("./images/Trap_g.png")
   },
   {
     "id": 5,
-    "title": "Product 5",
+    "title": "Green Sticker",
     "category": "sticker",
-    "category2": require("./images/Star.png")
+    "category2": require("./images/Star_g.png")
   },
   {
-    "id": 6,
-    "title": "Product 4",
+    "id": 4,
+    "title": "Blue Pin",
     "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
+    "category2": require("./images/Trap_b.png")
   },
   {
     "id": 1,
-    "title": "Product 1",
+    "title": "Designer T-Shirt",
     "category": "shirt",
     "category2": require("./images/Box_b.png")
   },
   {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": require("./images/Circle.png")
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": require("./images/Pent.png")
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
     "id": 1,
-    "title": "Product 1",
+    "title": "Athletic T-Shirt",
     "category": "shirt",
-    "category2": require("./images/Box.png")
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": require("./images/Circle.png")
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": require("./images/Pent.png")
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 1,
-    "title": "Product 1",
-    "category": "shirt",
-    "category2": require("./images/Box.png")
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": require("./images/Circle.png")
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": require("./images/Pent.png")
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  }
+    "category2": require("./images/Box_g.png")
+  },  
 ]
 
 export default class App extends Component {
@@ -351,6 +231,7 @@ export default class App extends Component {
 
     emptyCart() {
       localStorage.removeItem("cart", JSON.stringify(this.state.items));
+      window.location.reload();
     }
 
   render() {
@@ -368,8 +249,8 @@ export default class App extends Component {
           <div className="topnav">
             <h1>JMU Dungeons and Dragons Club Merch Store</h1>
           </div>
-          <button onClick={() => this.open()} type="submit">
-          <img src={cartI} border="0" class="cancel"/>
+          <button onClick={() => this.open()} type="submit" class="carty">
+            <img src={cartI} border="0" class="cancel"/>
           </button>
           <div className="filter">
             <h3><u>Categories</u></h3>
@@ -429,8 +310,7 @@ export default class App extends Component {
         </div>
 
         <div id="cart" class="form">
-          <p>productsList</p>
-          <img src="" alt="buttonpng" border="0" id="picture" class="fitted" />
+          <p>Shopping Cart</p>
           <button type="submit" onClick={() => this.close()} class="exit"> <img src={cancel} border="0" class="cancel"/></button>
           <button type="submit" onClick={() => this.emptyCart()} class="add">Empty cart</button>
           <br></br>

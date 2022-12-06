@@ -75,213 +75,64 @@ const productsList = [
   {
     "id": 1,
     "title": "Product 1",
-    "category": "shirt",
+    "category": "Designer Shirt",
     "category2": require("./images/Box.png")
   },
   {
     "id": 2,
     "title": "Product 2",
-    "category": "sweatshirt",
+    "category": "Designer SweatShirt",
     "category2": require("./images/Circle.png")
   },
   {
     "id": 3,
     "title": "Product 3",
-    "category": "hat",
+    "category": "Hat",
     "category2": require("./images/Pent.png")
   },
   {
     "id": 4,
     "title": "Product 4",
-    "category": "pin",
+    "category": "Pin",
     "category2": require("./images/Trap.png")
   },
   {
     "id": 5,
     "title": "Product 5",
-    "category": "sticker",
+    "category": "Sticker",
     "category2": require("./images/Star.png")
   },
   {
     "id": 6,
     "title": "Product 4",
-    "category": "pin",
+    "category": "Custom Pin",
     "category2": require("./images/Trap.png")
   },
   {
     "id": 7,
     "title": "Product 5",
-    "category": "sticker",
+    "category": "Custom Sticker",
     "category2": require("./images/Star.png")
   },
   {
     "id": 8,
     "title": "Product 1",
-    "category": "shirt",
+    "category": "Shirt",
     "category2": require("./images/Box.png")
   },
   {
     "id": 9,
     "title": "Product 2",
-    "category": "sweatshirt",
+    "category": "Sweatshirt",
     "category2": require("./images/Circle.png")
   },
   {
     "id": 3,
     "title": "Product 3",
-    "category": "hat",
+    "category": "Top Hat",
     "category2": require("./images/Pent.png")
   },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 1,
-    "title": "Product 1",
-    "category": "shirt",
-    "category2": require("./images/Box.png")
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": require("./images/Circle.png")
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": require("./images/Pent.png")
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 1,
-    "title": "Product 1",
-    "category": "shirt",
-    "category2": require("./images/Box.png")
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": require("./images/Circle.png")
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": require("./images/Pent.png")
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 1,
-    "title": "Product 1",
-    "category": "shirt",
-    "category2": require("./images/Box.png")
-  },
-  {
-    "id": 2,
-    "title": "Product 2",
-    "category": "sweatshirt",
-    "category2": require("./images/Circle.png")
-  },
-  {
-    "id": 3,
-    "title": "Product 3",
-    "category": "hat",
-    "category2": require("./images/Pent.png")
-  },
-  {
-    "id": 4,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 5,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  },
-  {
-    "id": 6,
-    "title": "Product 4",
-    "category": "pin",
-    "category2": require("./images/Trap.png")
-  },
-  {
-    "id": 7,
-    "title": "Product 5",
-    "category": "sticker",
-    "category2": require("./images/Star.png")
-  }
+
 ]
 
 export default class App extends Component {

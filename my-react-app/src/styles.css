@@ -21,6 +21,11 @@
     overflow:auto;
     position:relative;
     left: 170px;
+    background-color: white;
+  }
+
+  li {
+    list-style-type: none;
   }
 
   h3 {

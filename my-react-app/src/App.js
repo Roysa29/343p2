@@ -4,7 +4,7 @@ import ProductList from "./ProductsList";
 import "./styles.css";
 import "./productStyle.css";
 
-import cartLst from './data.json';
+import cartList from './data.json';
 
 function close() {
   let popup = document.getElementById("pop");
@@ -71,6 +71,11 @@ function removeFromCart() {
 }
 
 // Just placeholder images for now
+
+const items = []
+
+const cart = cartList.cartList;
+
 const productsList = [
   {
     "id": 1,
@@ -138,6 +143,7 @@ const productsList = [
 export default class App extends Component {
   state = {
     products: productsList,
+    items: items,
     categories: {
       shirt: false,
       sweatshirt: false,
@@ -165,11 +171,33 @@ export default class App extends Component {
     document.getElementById("blind").classList.add("opaque")
     popup.classList.add("openForm")
 
+      let data = localStorage.getItem('cart').split(",");
+  
+      let list = document.getElementById("myList");
+  
+      data.forEach((item) => {
+        let li = document.createElement("li");
+        li.innerText = item;
+        list.appendChild(li);
+      });
+
   }
 
   close() {
     let popup = document.getElementById("cart");
-  }
+    document.getElementById("blind").classList.remove("opaque")
+    popup.classList.remove("openForm")  }
+
+
+    addItem() {
+      let holder = document.getElementById("title").innerHTML;
+      this.state.items.push(holder)
+      localStorage.setItem("cart", JSON.stringify(this.state.items));
+    }
+
+    emptyCart() {
+      localStorage.removeItem("cart", JSON.stringify(this.state.items));
+    }
 
   render() {
     const checkedProducts = Object.entries(this.state.categories)
@@ -237,20 +265,27 @@ export default class App extends Component {
           />
           </div>
         </div>
-            
-            <div id="pop" class="form">
-            <p id="title">"how yall doing"</p>
-            <img src=""  alt="buttonpng" border="0" id="picture" class="fitted"/>
-            <button type="submit" onClick={() => close()} class ="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png"  alt="Cancel Button" border="0"/></button>
-            <button type="submit" onClick={() => addToCart()}>Add it to the cart</button>
-            <p class ="sized">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <button type="submit" class="add">Add it to the cart</button>
-          </div>
-          <div id="cart" class="form">
-            <p>"car"</p>
-          </div>
+
+        <div id="pop" class="form">
+          <p id="title">"how yall doing"</p>
+          <img src="" alt="buttonpng" border="0" id="picture" class="fitted" />
+          <button type="submit" onClick={() => close()} class="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png" alt="Cancel Button" border="0" /></button>
+          <p class="sized">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button type="submit" onClick={() => this.addItem()} class="add">Add it to the cart</button>
+        </div>
+
+        <div id="cart" class="form">
+          <p>productsList</p>
+          <img src="" alt="buttonpng" border="0" id="picture" class="fitted" />
+          <button type="submit" onClick={() => this.close()} class="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png" alt="Cancel Button" border="0" /></button>
+          <button type="submit" onClick={() => this.emptyCart()} class="add">Empty cart</button>
+          <br></br>
+          <li id="myList"></li>
+          {/* {localStorage.getItem('cart')} */}
+          
+        </div>
       </div>
-    
+
 
 
     );

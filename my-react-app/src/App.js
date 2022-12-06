@@ -138,7 +138,156 @@ const productsList = [
     "category": "Top Hat",
     "category2": require("./images/Pent.png")
   },
-
+  {
+    "id": 4,
+    "title": "Product 4",
+    "category": "pin",
+    "category2": require("./images/Trap.png")
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2": require("./images/Star.png")
+  },
+  {
+    "id": 6,
+    "title": "Product 4",
+    "category": "pin",
+    "category2": require("./images/Trap.png")
+  },
+  {
+    "id": 7,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2": require("./images/Star.png")
+  },
+  {
+    "id": 1,
+    "title": "Product 1",
+    "category": "shirt",
+    "category2": require("./images/Box_b.png")
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "category": "sweatshirt",
+    "category2": require("./images/Circle.png")
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "category": "hat",
+    "category2": require("./images/Pent.png")
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "category": "pin",
+    "category2": require("./images/Trap.png")
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2": require("./images/Star.png")
+  },
+  {
+    "id": 6,
+    "title": "Product 4",
+    "category": "pin",
+    "category2": require("./images/Trap.png")
+  },
+  {
+    "id": 7,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2": require("./images/Star.png")
+  },
+  {
+    "id": 1,
+    "title": "Product 1",
+    "category": "shirt",
+    "category2": require("./images/Box.png")
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "category": "sweatshirt",
+    "category2": require("./images/Circle.png")
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "category": "hat",
+    "category2": require("./images/Pent.png")
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "category": "pin",
+    "category2": require("./images/Trap.png")
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2": require("./images/Star.png")
+  },
+  {
+    "id": 6,
+    "title": "Product 4",
+    "category": "pin",
+    "category2": require("./images/Trap.png")
+  },
+  {
+    "id": 7,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2": require("./images/Star.png")
+  },
+  {
+    "id": 1,
+    "title": "Product 1",
+    "category": "shirt",
+    "category2": require("./images/Box.png")
+  },
+  {
+    "id": 2,
+    "title": "Product 2",
+    "category": "sweatshirt",
+    "category2": require("./images/Circle.png")
+  },
+  {
+    "id": 3,
+    "title": "Product 3",
+    "category": "hat",
+    "category2": require("./images/Pent.png")
+  },
+  {
+    "id": 4,
+    "title": "Product 4",
+    "category": "pin",
+    "category2": require("./images/Trap.png")
+  },
+  {
+    "id": 5,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2": require("./images/Star.png")
+  },
+  {
+    "id": 6,
+    "title": "Product 4",
+    "category": "pin",
+    "category2": require("./images/Trap.png")
+  },
+  {
+    "id": 7,
+    "title": "Product 5",
+    "category": "sticker",
+    "category2": require("./images/Star.png")
+  }
 ]
 
 export default class App extends Component {
@@ -173,6 +322,9 @@ export default class App extends Component {
     popup.classList.add("openForm")
 
       let data = localStorage.getItem('cart').split(",");
+      // data = data.replace(/\[/g,'')
+      // data = data.replace(/\]/g,'')
+      // data = data.replace(/\"/g,'') 
   
       let list = document.getElementById("myList");
   

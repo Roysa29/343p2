@@ -338,10 +338,8 @@ export default class App extends Component {
           <button onClick={() => this.open()} type="submit">
             <p>Cart</p>
           </button>
-          <p>Click On A Product For More Options</p>
           <div className="filter">
-            <br></br>
-            <br></br>
+            <h3><u>Categories</u></h3>
             <Checkbox
               id="1"
               title="T-Shirts"
@@ -378,6 +376,7 @@ export default class App extends Component {
               handleChange={this.handleChange}
             />
           </div>
+          <div type="products">
           <ProductList
             products={
               filteredProducts.length === 0
@@ -385,6 +384,7 @@ export default class App extends Component {
                 : filteredProducts
             }
           />
+          </div>
         </div>
             
             <div id="pop" class="form">

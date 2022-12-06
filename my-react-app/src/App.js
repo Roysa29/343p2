@@ -3,7 +3,8 @@ import Checkbox from "./Checkbox";
 import ProductList from "./ProductsList";
 import "./styles.css";
 import "./productStyle.css";
-import cancel from './images/Cancel.png'
+import cancel from './images/Cancel.png';
+import cartI from './images/Cart.png';
 
 import cartList from './data.json';
 
@@ -368,7 +369,7 @@ export default class App extends Component {
             <h1>JMU Dungeons and Dragons Club Merch Store</h1>
           </div>
           <button onClick={() => this.open()} type="submit">
-            <p>Cart</p>
+          <img src={cartI} border="0" class="cancel"/>
           </button>
           <div className="filter">
             <h3><u>Categories</u></h3>

@@ -6,42 +6,46 @@ import "./productStyle.css";
 import cancel from './images/Cancel.png';
 import cartI from './images/Cart.png';
 
-import cartList from './data.json';
 
+// Close Item Menu
 function close() {
   let popup = document.getElementById("pop");
   document.getElementById("blind").classList.remove("opaque")
   popup.classList.remove("openForm")
 }
 
+
+// Save Cookies
 function createCookie(name, value, days) {
   var expires;
   if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = "; expires=" + date.toUTCString();
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
   }
   else {
-      expires = "";
+    expires = "";
   }
   document.cookie = name + "=" + value + expires + "; path=/";
 }
 
+// Get Cookies
 function getCookie(c_name) {
   if (document.cookie.length > 0) {
-      var c_start = document.cookie.indexOf(c_name + "=");
-      if (c_start != -1) {
-          c_start = c_start + c_name.length + 1;
-          var c_end = document.cookie.indexOf(";", c_start);
-          if (c_end == -1) {
-              c_end = document.cookie.length;
-          }
-          return unescape(document.cookie.substring(c_start, c_end));
+    var c_start = document.cookie.indexOf(c_name + "=");
+    if (c_start != -1) {
+      c_start = c_start + c_name.length + 1;
+      var c_end = document.cookie.indexOf(";", c_start);
+      if (c_end == -1) {
+        c_end = document.cookie.length;
       }
+      return unescape(document.cookie.substring(c_start, c_end));
+    }
   }
   return "";
 }
 
+// Get items in the cart
 function getCart() {
   var cart;
   var cookie = getCookie("MyCart");
@@ -54,30 +58,30 @@ function getCart() {
   return cart;
 }
 
+// Add items to the cart
 function addToCart() {
   var cart = getCart();
   cart.push("");
   createCookie("MyCart", JSON.stringify(cart), 2);
 }
 
+// Remove item from the cart
 function removeFromCart() {
   var cart = getCart();
   if (cart.length() > 0) {
     for (var i = 0; i < cart.length; i++) {
       //if (cart[i] == item) {
-        //cart.slice(i, i);
+      //cart.slice(i, i);
       //}
     }
     createCookie("MyCart", JSON.stringify(cart), 2);
   }
 }
 
-// Just placeholder images for now
 
 const items = []
 
-const cart = cartList.cartList;
-
+// JSON of all items in the store
 const productsList = [
   {
     "id": 1,
@@ -227,42 +231,47 @@ export default class App extends Component {
     });
   };
 
+  // Open Cart
   open() {
     let popup = document.getElementById("cart");
     document.getElementById("blind").classList.add("opaque")
     popup.classList.add("openForm")
 
-      let data = localStorage.getItem('cart').split(",");
+    let data = localStorage.getItem('cart').split(",");
 
-      data[0] = ''
-      data[data.length - 1] = ''
-    
-      let list = document.getElementById("myList");
-  
-      data.forEach((item) => {
-        let li = document.createElement("li");
-        li.innerText = item;
-        list.appendChild(li);
-      });
+    data[0] = ''
+    data[data.length - 1] = ''
+
+    let list = document.getElementById("myList");
+
+    data.forEach((item) => {
+      let li = document.createElement("li");
+      li.innerText = item;
+      list.appendChild(li);
+    });
 
   }
 
+  // Cart Cart
   close() {
     let popup = document.getElementById("cart");
     document.getElementById("blind").classList.remove("opaque")
-    popup.classList.remove("openForm")  }
+    popup.classList.remove("openForm")
+  }
 
 
-    addItem() {
-      let holder = document.getElementById("title").innerHTML;
-      this.state.items.push(holder)
-      localStorage.setItem("cart", JSON.stringify(this.state.items));
-    }
+  // Add item to cart
+  addItem() {
+    let holder = document.getElementById("title").innerHTML;
+    this.state.items.push(holder)
+    localStorage.setItem("cart", JSON.stringify(this.state.items));
+  }
 
-    emptyCart() {
-      localStorage.removeItem("cart", JSON.stringify(this.state.items));
-      window.location.reload();
-    }
+  // Remove all items from cart
+  emptyCart() {
+    localStorage.removeItem("cart", JSON.stringify(this.state.items));
+    window.location.reload();
+  }
 
   render() {
     const checkedProducts = Object.entries(this.state.categories)
@@ -280,8 +289,10 @@ export default class App extends Component {
             <h1>JMU Dungeons and Dragons Club Merch Store</h1>
           </div>
           <button onClick={() => this.open()} type="submit" class="carty">
-            <img src={cartI} border="0" class="cancel"/>
+            <img src={cartI} border="0" class="cancel" />
           </button>
+
+          {/* Filter on side */}
           <div className="filter">
             <h3><u>Categories</u></h3>
             <Checkbox
@@ -321,32 +332,32 @@ export default class App extends Component {
             />
           </div>
           <div type="products">
-          <ProductList
-            products={
-              filteredProducts.length === 0
-                ? this.state.products
-                : filteredProducts
-            }
-          />
+            <ProductList
+              products={
+                filteredProducts.length === 0
+                  ? this.state.products
+                  : filteredProducts
+              }
+            />
           </div>
         </div>
 
+        {/* Item menu */}
         <div id="pop" class="form">
           <p class="heading" id="title">"Placeholder"</p>
           <img src="" alt="buttonpng" border="0" id="picture" class="fitted" />
-          <button type="submit" onClick={() => close()} class="exit"> <img src={cancel} border="0" class="cancel"/></button>
+          <button type="submit" onClick={() => close()} class="exit"> <img src={cancel} border="0" class="cancel" /></button>
           <p class="sized">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <button type="submit" onClick={() => this.addItem()} class="add">Add it to the cart</button>
         </div>
 
+        {/* Cart menu */}
         <div id="cart" class="form">
           <p>Shopping Cart</p>
-          <button type="submit" onClick={() => this.close()} class="exit"> <img src={cancel} border="0" class="cancel"/></button>
+          <button type="submit" onClick={() => this.close()} class="exit"> <img src={cancel} border="0" class="cancel" /></button>
           <button type="submit" onClick={() => this.emptyCart()} class="add">Empty cart</button>
           <br></br>
           <li id="myList"></li>
-          {/* {localStorage.getItem('cart')} */}
-          
         </div>
       </div>
 

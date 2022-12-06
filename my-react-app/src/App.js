@@ -335,7 +335,7 @@ export default class App extends Component {
               : filteredProducts
           }
         />
-              </div>
+            
             <div id="pop" class="form">
             <p id="title">"how yall doing"</p>
             <img src=""  alt="buttonpng" border="0" id="picture" class="fitted"/>

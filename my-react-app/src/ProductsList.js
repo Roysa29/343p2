@@ -10,9 +10,7 @@ const ProductList = props => {
     
   }
 
-  function close() {
-    let popup = document.getElementById("pop");
-  }
+
   
   const renderProducts = products.map(({ id, title, category, category2}) => {
     return (

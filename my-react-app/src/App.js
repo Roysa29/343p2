@@ -40,6 +40,18 @@ export default class App extends Component {
     });
   };
 
+  open() {
+    let popup = document.getElementById("cart");
+    document.getElementById("blind").classList.add("opaque")
+    popup.classList.add("openForm")
+    
+  }
+
+  close() {
+    let popup = document.getElementById("cart");
+  }
+
+
   render() {
     const checkedProducts = Object.entries(this.state.categories)
       .filter(category => category[1])
@@ -55,6 +67,9 @@ export default class App extends Component {
         <div className="topnav">
         <h1>JMU Dungeons and Dragons Club Merch Store</h1>
         </div>
+        <button  onClick={() => this.open()} type="submit">
+                  <p>Cart</p>
+                </button>
         <p>Click On A Product For More Options</p>
         <div className="filter">
           <br></br>
@@ -105,6 +120,9 @@ export default class App extends Component {
               </div>
             <div id="pop" class="form">
             <p>"how yall doing"</p>
+          </div>
+          <div id="cart" class="form">
+            <p>"car"</p>
           </div>
       </div>
 

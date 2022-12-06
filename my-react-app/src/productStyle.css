@@ -107,7 +107,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: blue;
+    background-color: whitesmoke;
     z-index: -1000;
     opacity: 0;
 }
@@ -145,19 +145,18 @@
     width: 350px; 
     height: 350px; 
     left: 5%;
-    top:10%;
+    top:20%;
     position: absolute;
 }
 
 .sized {
     position: absolute;
-    right: 5%;
-    width: 400px;
+    width: 250px;
     height: 400px;
-    top: 20%;
-    right: 5%;
-    font-size: medium;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    top: 25%;
+    right: 10%;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .cancel {

@@ -328,13 +328,6 @@ export default class App extends Component {
             }
           />
         </div>
-        <ProductList
-          products={
-            filteredProducts.length === 0
-              ? this.state.products
-              : filteredProducts
-          }
-        />
             
             <div id="pop" class="form">
             <p id="title">"how yall doing"</p>

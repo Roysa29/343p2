@@ -24,6 +24,10 @@
     background-color: white;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   h3 {
     margin-top: 0;
     margin-bottom: 15px;

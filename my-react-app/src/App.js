@@ -99,6 +99,12 @@ const productsList = [
   },
   {
     "id": 3,
+    "title": "Winter Hat",
+    "category": "hat",
+    "category2": require("./images/Pent_y.png")
+  },
+  {
+    "id": 3,
     "title": "Hat",
     "category": "hat",
     "category2": require("./images/Pent.png")
@@ -134,6 +140,12 @@ const productsList = [
     "category2": require("./images/Circle.png")
   },
   {
+    "id": 2,
+    "title": "Yellow Sticker",
+    "category": "sticker",
+    "category2": require("./images/Star_y.png")
+  },
+  {
     "id": 3,
     "title": "Top Hat",
     "category": "hat",
@@ -144,6 +156,12 @@ const productsList = [
     "title": "Green Pin",
     "category": "pin",
     "category2": require("./images/Trap_g.png")
+  },
+  {
+    "id": 3,
+    "title": "Yellow Pin",
+    "category": "pin",
+    "category2": require("./images/Trap_y.png")
   },
   {
     "id": 5,
@@ -168,7 +186,19 @@ const productsList = [
     "title": "Athletic T-Shirt",
     "category": "shirt",
     "category2": require("./images/Box_g.png")
-  },  
+  },
+  {
+    "id": 1,
+    "title": "Winter T-Shirt",
+    "category": "shirt",
+    "category2": require("./images/Box_y.png")
+  },
+  {
+    "id": 2,
+    "title": "Winter SweatShirt",
+    "category": "sweatshirt",
+    "category2": require("./images/Circle_y.png")
+  },
 ]
 
 export default class App extends Component {
@@ -203,10 +233,10 @@ export default class App extends Component {
     popup.classList.add("openForm")
 
       let data = localStorage.getItem('cart').split(",");
-      // data = data.replace(/\[/g,'')
-      // data = data.replace(/\]/g,'')
-      // data = data.replace(/\"/g,'') 
-  
+
+      data[0] = ''
+      data[data.length - 1] = ''
+    
       let list = document.getElementById("myList");
   
       data.forEach((item) => {

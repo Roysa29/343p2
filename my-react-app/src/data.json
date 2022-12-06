@@ -1,0 +1,29 @@
+{
+    "cartList": [
+      {
+        "id": 1,
+        "title": "Product 1",
+        "category": "shirt",
+        "category2": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Product 2",
+        "category": "sweatshirt",
+        "category2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAomGFkhCpF5jGBEcQdR1QqYDEbBsQxDgHOkvdrAT5SoMlcN2BaUKdY5LS4bkPHZGgXx4&usqp=CAU"
+      },
+      {
+        "id": 3,
+        "title": "Product 3",
+        "category": "hat",
+        "category2": "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
+      },
+      {
+        "id": 4,
+        "title": "Product 4",
+        "category": "pin",
+        "category2": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Juvenile_Ragdoll.jpg"
+      }
+  ]
+  }
+  

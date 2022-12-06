@@ -126,6 +126,7 @@ export default class App extends Component {
             <div id="pop" class="form">
             <p>"how yall doing"</p>
             <button type="submit" onClick={() => close()} class ="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png"  alt="Cancel Button" border="0"/></button>
+            <button type="submit">Add it to the cart</button>
           </div>
           <div id="cart" class="form">
             <p>"car"</p>

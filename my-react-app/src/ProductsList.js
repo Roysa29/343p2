@@ -1,11 +1,13 @@
-import {React, useEffect, useRef }from "react";
+import {React}from "react";
 import "./productStyle.css";
 
 const ProductList = props => {
   const { products } = props;
-  function open() {
+  function open(img, cat) {
     let popup = document.getElementById("pop");
     document.getElementById("blind").classList.add("opaque")
+    document.getElementById("picture").src = img
+    document.getElementById("title").innerHTML = cat
     popup.classList.add("openForm")
     
   }
@@ -20,7 +22,7 @@ const ProductList = props => {
               <div>
                 
                 <button type="submit">
-                  <img src={category2} onClick={() => open()}  alt="buttonpng" border="0"/>
+                  <img src={category2} onClick={() => open(category2, category)}  alt="buttonpng" border="0"/>
 
                 </button>
 

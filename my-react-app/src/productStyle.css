@@ -172,3 +172,10 @@
     right: 3%;
     position: absolute;
 }
+
+.heading {
+    top: 5%;
+    left: 2%;
+    text-decoration: underline;
+    position: absolute;
+}

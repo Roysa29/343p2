@@ -321,6 +321,9 @@ export default class App extends Component {
     popup.classList.add("openForm")
 
       let data = localStorage.getItem('cart').split(",");
+      // data = data.replace(/\[/g,'')
+      // data = data.replace(/\]/g,'')
+      // data = data.replace(/\"/g,'') 
   
       let list = document.getElementById("myList");
   

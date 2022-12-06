@@ -231,6 +231,7 @@ export default class App extends Component {
 
     emptyCart() {
       localStorage.removeItem("cart", JSON.stringify(this.state.items));
+      window.location.reload();
     }
 
   render() {

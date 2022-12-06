@@ -11,6 +11,65 @@ function close() {
   document.getElementById("blind").classList.remove("opaque")
   popup.classList.remove("openForm")
 }
+
+function createCookie(name, value, days) {
+  var expires;
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+  }
+  else {
+      expires = "";
+  }
+  document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function getCookie(c_name) {
+  if (document.cookie.length > 0) {
+      var c_start = document.cookie.indexOf(c_name + "=");
+      if (c_start != -1) {
+          c_start = c_start + c_name.length + 1;
+          var c_end = document.cookie.indexOf(";", c_start);
+          if (c_end == -1) {
+              c_end = document.cookie.length;
+          }
+          return unescape(document.cookie.substring(c_start, c_end));
+      }
+  }
+  return "";
+}
+
+function getCart() {
+  var cart;
+  var cookie = getCookie("MyCart");
+
+  if (cookie != "") {
+    cart = JSON.parse(cookie);
+  } else {
+    cart = [];
+  }
+  return cart;
+}
+
+function addToCart() {
+  var cart = getCart();
+  cart.push("");
+  createCookie("MyCart", JSON.stringify(cart), 2);
+}
+
+function removeFromCart() {
+  var cart = getCart();
+  if (cart.length() > 0) {
+    for (var i = 0; i < cart.length; i++) {
+      //if (cart[i] == item) {
+        //cart.slice(i, i);
+      //}
+    }
+    createCookie("MyCart", JSON.stringify(cart), 2);
+  }
+}
+
 // Just placeholder images for now
 
 const items = []
@@ -307,10 +366,8 @@ export default class App extends Component {
           <button onClick={() => this.open()} type="submit">
             <p>Cart</p>
           </button>
-          <p>Click On A Product For More Options</p>
           <div className="filter">
-            <br></br>
-            <br></br>
+            <h3><u>Categories</u></h3>
             <Checkbox
               id="1"
               title="T-Shirts"
@@ -347,6 +404,7 @@ export default class App extends Component {
               handleChange={this.handleChange}
             />
           </div>
+          <div type="products">
           <ProductList
             products={
               filteredProducts.length === 0
@@ -354,6 +412,7 @@ export default class App extends Component {
                 : filteredProducts
             }
           />
+          </div>
         </div>
 
         <div id="pop" class="form">

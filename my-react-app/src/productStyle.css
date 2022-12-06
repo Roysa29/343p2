@@ -6,10 +6,10 @@
     margin: 0vh 5vw;
     background-color: rgb(193, 167, 214);
     width: 150px;
-    height: 875px;
+    height: 200px;
     position: absolute;
-    left: -88px;
-    top: 100px;
+    left: -5%;
+    top: 30%;
     border-style: solid;
     text-align: left;
 }

@@ -257,6 +257,64 @@ export default class App extends Component {
 
   }
 
+  createCookie(name, value, days) {
+    var expires;
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    else {
+        expires = "";
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+  }
+
+  getCookie(c_name) {
+    if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=");
+        if (c_start != -1) {
+            c_start = c_start + c_name.length + 1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) {
+                c_end = document.cookie.length;
+            }
+            return unescape(document.cookie.substring(c_start, c_end));
+        }
+    }
+    return "";
+    }
+
+  getCart() {
+    var cart;
+    var cookie = getCookie("MyCart");
+
+    if (cookie != "") {
+      cart = JSON.parse(cookie);
+    } else {
+      cart = [];
+    }
+    return cart;
+  }
+
+  addToCart() {
+    var cart = getCart();
+    cart.push(item);
+    createCookie("MyCart", JSON.stringify(cart), 2);
+  }
+
+  removeFromCart() {
+    var cart = getCart();
+    if (cart.length() > 0) {
+      for (i = 0; i < cart.length; i++) {
+        if (cart[i] == item) {
+          //cart.slice(i, i);
+        }
+      }
+      createCookie("MyCart", JSON.stringify(cart), 2);
+    }
+  }
+
   close() {
     let popup = document.getElementById("cart");
   }
@@ -333,6 +391,7 @@ export default class App extends Component {
             <p id="title">"how yall doing"</p>
             <img src=""  alt="buttonpng" border="0" id="picture" class="fitted"/>
             <button type="submit" onClick={() => close()} class ="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png"  alt="Cancel Button" border="0"/></button>
+            <button type="submit" onClick={() => addToCart()}>Add it to the cart</button>
             <p class ="sized">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <button type="submit" class="add">Add it to the cart</button>
           </div>

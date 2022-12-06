@@ -5,6 +5,11 @@ import ProductList from "./ProductsList";
 import "./styles.css";
 import "./productStyle.css";
 
+function close() {
+  let popup = document.getElementById("pop");
+  document.getElementById("blind").classList.remove("opaque")
+  popup.classList.remove("openForm")
+}
 // Just placeholder images for now
 const productsList = [
   {
@@ -105,6 +110,7 @@ export default class App extends Component {
               </div>
             <div id="pop" class="form">
             <p>"how yall doing"</p>
+            <button type="submit" onClick={() => close()} class ="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png"  alt="Cancel Button" border="0"/></button>
           </div>
       </div>
 

@@ -54,7 +54,7 @@ function getCart() {
 
 function addToCart() {
   var cart = getCart();
-  cart.push(item);
+  cart.push("");
   createCookie("MyCart", JSON.stringify(cart), 2);
 }
 
@@ -319,7 +319,7 @@ export default class App extends Component {
   close() {
     let popup = document.getElementById("cart");
   }
-  
+
   render() {
     const checkedProducts = Object.entries(this.state.categories)
       .filter(category => category[1])

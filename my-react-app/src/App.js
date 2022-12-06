@@ -3,6 +3,7 @@ import Checkbox from "./Checkbox";
 import ProductList from "./ProductsList";
 import "./styles.css";
 import "./productStyle.css";
+import cancel from './images/Cancel.png'
 
 import cartList from './data.json';
 
@@ -269,7 +270,7 @@ export default class App extends Component {
         <div id="pop" class="form">
           <p id="title">"how yall doing"</p>
           <img src="" alt="buttonpng" border="0" id="picture" class="fitted" />
-          <button type="submit" onClick={() => close()} class="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png" alt="Cancel Button" border="0" /></button>
+          <button type="submit" onClick={() => close()} class="exit"> <img src={cancel} border="0" class="cancel"/></button>
           <p class="sized">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <button type="submit" onClick={() => this.addItem()} class="add">Add it to the cart</button>
         </div>
@@ -277,7 +278,7 @@ export default class App extends Component {
         <div id="cart" class="form">
           <p>productsList</p>
           <img src="" alt="buttonpng" border="0" id="picture" class="fitted" />
-          <button type="submit" onClick={() => this.close()} class="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png" alt="Cancel Button" border="0" /></button>
+          <button type="submit" onClick={() => this.close()} class="exit"> <img src={cancel} border="0" class="cancel"/></button>
           <button type="submit" onClick={() => this.emptyCart()} class="add">Empty cart</button>
           <br></br>
           <li id="myList"></li>

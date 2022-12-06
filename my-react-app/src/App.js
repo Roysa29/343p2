@@ -328,27 +328,26 @@ export default class App extends Component {
             }
           />
         </div>
-        <div id="pop" class="form">
-          <p>"how yall doing"</p>
-          <button type="submit" onClick={() => close()} class="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png" alt="Cancel Button" border="0" /></button>
-        </div>
-        <div id="cart" class="form">
-          <p>"car"</p>
-          <ul>
-            {productsList.map(({ id, title, category, category2 }) => (
-               <ul key={id} >
-               <div>
-                  
-                   <img src={category2}  alt="buttonpng" border="0"/>
- 
- 
-               </div>
- 
-             </ul>
-            ))}
-          </ul>
-        </div>
+        <ProductList
+          products={
+            filteredProducts.length === 0
+              ? this.state.products
+              : filteredProducts
+          }
+        />
+              </div>
+            <div id="pop" class="form">
+            <p id="title">"how yall doing"</p>
+            <img src=""  alt="buttonpng" border="0" id="picture" class="fitted"/>
+            <button type="submit" onClick={() => close()} class ="exit"> <img src="C:/Users/Magic/OneDrive/Desktop/cs343/343p2/my-react-app/src/cancel.png"  alt="Cancel Button" border="0"/></button>
+            <p class ="sized">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button type="submit" class="add">Add it to the cart</button>
+          </div>
+          <div id="cart" class="form">
+            <p>"car"</p>
+          </div>
       </div>
+    
 
 
     );
